@@ -13,7 +13,7 @@ export function CardsGrid(){
   const [movies, setMovies] = useState([]);
 
   useEffect(()=>{
-    fetch(`https://api.themoviedb.org/3/discover/movie?with_genres=${genreId}&language=pt-BR&api_key=${API_KEY}`).then((response)=>{
+    fetch(`https://api.themoviedb.org/3/discover/movie?with_genres=28&language=pt-BR&api_key=${API_KEY}`).then((response)=>{
       response.json().then((data)=>{
          setMovies(data.results);
          console.log(movies);
@@ -23,7 +23,7 @@ export function CardsGrid(){
   
     return <Wrap
       spacing="60px"
-      h="400px"
+      h="380px"
       w="100%"
       maxWidth="890px"
       marginTop="20px"

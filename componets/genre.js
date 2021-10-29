@@ -4,8 +4,8 @@ export function Genre({ active, title }){
 
     return <Flex
      backgroundColor={active ? 'orange.400' : "blue.700"}
-     w="80px"
-     h="100px"
+     w="150px"
+     h="40px"
      justifyContent="center"
      alignItems="center"
      borderRadius="18px"
