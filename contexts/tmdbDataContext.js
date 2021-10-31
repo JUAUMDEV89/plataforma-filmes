@@ -9,7 +9,7 @@ export function TmdbProvider({ children }){
     const [movies, setMovies] = useState([]);
 
     useEffect(()=>{
-        fetch(`https://api.themoviedb.org/3/discover/movie?with_genres=${genreId}&language=pt-BR&api_key=${API_KEY}`).then((response)=>{
+        fetch(`https://api.themoviedb.org/3/movie/top_rated?language=pt-BR&api_key=${API_KEY}`).then((response)=>{
             response.json().then((data)=>{
                setMovies(data.results);
                console.log(movies);
@@ -17,7 +17,17 @@ export function TmdbProvider({ children }){
           })
     }, []);
 
-    return <TmdbContext.Provider value={ { movies } }>
+    useEffect(()=>{
+        fetch(`https://api.themoviedb.org/3/discover/movie?with_genres=${genreId}&language=pt-BR&api_key=${API_KEY}`).then((response)=>{
+            response.json().then((data)=>{
+               setMovies(data.results);
+               console.log(movies);
+            })
+          })
+    }, [genreId]);
+
+
+    return <TmdbContext.Provider value={ { movies, setGenreId } }>
         { children }
     </TmdbContext.Provider>
 }

@@ -7,7 +7,6 @@ export function Card({ name, vote, url_image }){
       h="260px"
       direction="column"
       borderRadius="10px"
-      backgroundColor="red"
       cursor="pointer"
       position="relative"
     >

@@ -5,6 +5,7 @@ import { Header } from '../componets/header';
 import { Aside } from '../componets/aside';
 import { CardsGrid } from '../componets/cardsGrid';
 import { Video } from '../componets/video';
+import { Footer } from '../componets/footer';
 
 export default function Home() {
   return (
@@ -40,7 +41,9 @@ export default function Home() {
           <Video />
 
          </Flex>
-   
+        
+         <Footer />
+
        </Flex>
 
     </Flex>
