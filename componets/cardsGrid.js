@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useContext } from 'react';
 import { Flex, Wrap } from '@chakra-ui/react';
 
 import { TmdbContext } from '../contexts/tmdbDataContext';
@@ -7,20 +7,8 @@ import { Card } from './card';
 
 export function CardsGrid({  genre_id }){
   
-  const API_KEY='38c007f28d5b66f36b9c3cf8d8452a4b'
+   const { movies } = useContext(TmdbContext);
 
-  const [genreId, setGenreId] = useState(28);
-  const [movies, setMovies] = useState([]);
-
-  useEffect(()=>{
-    fetch(`https://api.themoviedb.org/3/discover/movie?with_genres=${genre_id}&language=pt-BR&api_key=${API_KEY}`).then((response)=>{
-      response.json().then((data)=>{
-         setMovies(data.results);
-         console.log(movies);
-      })
-    })
-  }, []);
-  
     return <Wrap
       spacing="60px"
       h="380px"

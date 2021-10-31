@@ -2,6 +2,10 @@ import { Stack } from '@chakra-ui/react';
 
 import { Genre } from './genre';
 
+function loadAction(){
+
+}
+
 export function GenresList(){
 
     return <Stack
