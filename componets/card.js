@@ -1,6 +1,6 @@
 import { Flex, Text, Image } from '@chakra-ui/react';
 
-export function Card({ name, description, url_image }){
+export function Card({ name, vote, url_image }){
 
     return <Flex
       w="170px"
@@ -13,7 +13,7 @@ export function Card({ name, description, url_image }){
     >
       <Image 
        src={ url_image }
-       alt={name}
+       alt={ name }
        w="100"
        h="100%"
        borderRadius="10px"
@@ -35,12 +35,14 @@ export function Card({ name, description, url_image }){
       <Text
         color="white"
         fontWeight="bold"
-        fontSize="0.8rem"
+        fontSize="0.6rem"
+        marginTop="5px"
       >{ name }</Text>
 
       <Text
-        color="gray.800"
-      >{ description }</Text>
+        color="white"
+        fontSize="0.5rem"
+      >Vote: { vote }</Text>
       </Flex>
     </Flex>
 }

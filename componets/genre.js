@@ -1,6 +1,6 @@
 import { Flex, Text } from '@chakra-ui/react';
 
-export function Genre({ active, title }){
+export function Genre({ active, title, onClick }){
 
     return <Flex
      backgroundColor={active ? 'orange.400' : "blue.700"}
@@ -10,6 +10,7 @@ export function Genre({ active, title }){
      alignItems="center"
      borderRadius="18px"
      cursor="pointer"
+     onClick={onClick}
     >
        <Text
         color="white"

@@ -32,7 +32,9 @@ export default function Home() {
          >
            <GenresList />
 
-           <CardsGrid />
+           <CardsGrid 
+             genre_id={'99'}
+           />
          </Flex>
         
           <Video />
