@@ -57,13 +57,12 @@ export function Video(){
     
     <Flex
       w="100%"
-      
     >
       <Text
         color="white"
         marginTop="5px"
         fontWeight="bold"
-      >{movie.name}</Text>
+      >{movie.title}</Text>
     </Flex>
 
      <Text

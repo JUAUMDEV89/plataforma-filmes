@@ -13,6 +13,6 @@ export function Header(){
      fontWeight="bold"
    >Movies</Text>
 
-   <Avatar src="https://github.com/JUAUMDEV89.o" />
+   <Avatar src="https://github.com/JUAUMDEV89.png" />
  </Flex>
 }

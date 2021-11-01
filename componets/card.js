@@ -21,7 +21,7 @@ export function Card({ name, vote, url_image }){
 
       <Flex
        direction="column"
-
+       justifyContent="center"
        filter="blur"
        width="100%"
        height="80px"
@@ -29,7 +29,7 @@ export function Card({ name, vote, url_image }){
        marginTop="200"
        borderBottomRadius="10px"
        paddingLeft="10px"
-       background="black"
+       background="blue.900"
       >
       <Text
         color="white"

@@ -41,8 +41,6 @@ export default function Home() {
           <Video />
 
          </Flex>
-        
-         <Footer />
 
        </Flex>
 

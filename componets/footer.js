@@ -5,9 +5,12 @@ export function Footer(){
       justifyContent="center"
       alignItems="center"
       h="2rem"
-      backgroundColor="blue.700"
+      backgroundColor="blue.800"
       w="100%"
+      mt="25px"
     >
-        <Text>Dados pegos da api https://developers.themoviedb.org/3</Text>
+        <Text
+          color="white"
+        >Dados pegos da API: https://developers.themoviedb.org/3</Text>
     </Flex>
 }
